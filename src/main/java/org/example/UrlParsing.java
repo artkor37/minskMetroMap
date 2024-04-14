@@ -19,34 +19,32 @@ public class UrlParsing {
         String url = "https://ru.wikipedia.org/wiki/Список_станций_Минского_метрополитена";
         Document page = Jsoup.connect(url).get();
 
-        Elements table = page.select("div.mw-content-ltr.mw-parser-output > table:nth-child(6) > tbody");
-
         Elements line1 = page.select("tr:nth-child(2) > th:nth-child(7) > table > tbody > " +
                 "tr:nth-child(1) > th > div > div");
-        Elements line1stations = table.select("tr:nth-child(2) > th:nth-child(7) > table > tbody > " +
-                "tr:nth-child(3) > td > table > tbody td:nth-child(5) span > a");
+        Elements line1stations = page.select("tr:nth-child(2) > th:nth-child(7) > table > tbody > " +
+                "tr:nth-child(3) > td > table > tbody td:nth-child(5) > span > a");
 
         Elements line2 = page.select("tr:nth-child(20) > th:nth-child(7) > table > tbody > " +
                 "tr:nth-child(1) > th > div > div");
-        Elements line2stations = table.select("tr:nth-child(20) > th:nth-child(7) > table > tbody > " +
-                "tr:nth-child(3) > td > table > tbody td:nth-child(5) span > a");
+        Elements line2stations = page.select("tr:nth-child(20) > th:nth-child(7) > table > tbody > " +
+                "tr:nth-child(3) > td > table > tbody td:nth-child(5) > span > a");
 
         Elements line3 = page.select("tr:nth-child(37) > th:nth-child(7) > table > tbody > " +
                 "tr:nth-child(1) > th > div > div");
-        Elements line3stations = table.select("tr:nth-child(37) > th:nth-child(7) > table > tbody > " +
+        Elements line3stations = page.select("tr:nth-child(37) > th:nth-child(7) > table > tbody > " +
                 "tr:nth-child(3) > td > table > tbody td:nth-child(5) span > a");
 
         // todo вывод в консоль
         String line1Name = line1.text();
-        System.out.println(line1Name);
+        System.out.println("Line 1 - " + line1Name);
         line1stations.forEach(element -> System.out.println(element.select("a").text()));
 
         String line2Name = line2.text();
-        System.out.println(line2Name);
+        System.out.println("Line 2 - " + line2Name);
         line2stations.forEach(element -> System.out.println(element.select("a").text()));
 
         String line3Name = line3.text();
-        System.out.println(line3Name);
+        System.out.println("Line 3 - " + line3Name);
         line3stations.forEach(element -> System.out.println(element.select("a").text()));
 
         //todo добавление в List
