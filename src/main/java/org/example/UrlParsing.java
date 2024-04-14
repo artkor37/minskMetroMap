@@ -14,7 +14,8 @@ import java.util.Set;
 
 public class UrlParsing {
     public static List<Station> stations4 = new ArrayList<>();
-    public static void main(String[] args) throws IOException {
+
+    public static void parsing() throws IOException {
         String url = "https://ru.wikipedia.org/wiki/Список_станций_Минского_метрополитена";
         Document page = Jsoup.connect(url).get();
 
