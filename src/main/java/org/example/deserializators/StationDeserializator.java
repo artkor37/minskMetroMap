@@ -1,27 +1,20 @@
 package org.example.deserializators;
 
-import com.google.gson.JsonDeserializationContext;
-import com.google.gson.JsonDeserializer;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParseException;
-import org.example.Line;
-import org.example.Station;
+import com.google.gson.*;
+import org.example.Line2;
 
 import java.lang.reflect.Type;
 
-public class StationDeserializator implements JsonDeserializer<Station> {
+public class StationDeserializator implements JsonDeserializer<Line2> {
     @Override
-    public Station deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext context) throws JsonParseException {
-        Line line = new Line();
-        String data2 = jsonElement.getAsString();
-
-        Station station = new Station();
-        String data = jsonElement.getAsString();
-        line.setColor("color");
-        //station.setLine(line.getColor("color"));
-        station.setName(data);
+    public Line2 deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext context) throws JsonParseException {
+        Line2 station2 = new Line2();
+        JsonArray data = jsonElement.getAsJsonArray();
 
 
-        return station;
+        //station2.setLine1(Collections.singletonList(data));
+
+
+        return station2;
     }
 }

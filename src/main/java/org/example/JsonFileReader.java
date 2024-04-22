@@ -9,21 +9,27 @@ import org.example.deserializators.StationDeserializator;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class JsonFileReader {
+    public static final List<String> line1stations = new ArrayList<>();
     public static void main(String[] args) throws FileNotFoundException {
 
-        Gson gson = new GsonBuilder()
-                .registerTypeAdapter(Station.class, new StationDeserializator())
-                .registerTypeAdapter(Line.class, new LineDeserializator())
+       // Gson gson = new Gson();
+       Gson gson = new GsonBuilder()
+                //.registerTypeAdapter(Station.class, new StationDeserializator())
+               // .registerTypeAdapter(Line.class, new LineDeserializator())
                 .setPrettyPrinting()
                 .create();
 
-        // FileReader rd = new FileReader("minskMetroMapExample.json");
-        FileReader rd = new FileReader("metroTest.json");
-        Metro newMetro = gson.fromJson(rd,Metro.class);
+        FileReader reader = new FileReader("minskMetroMap3.json");
+       // FileReader rd = new FileReader("metroTest.json");
+        Metro newMetro = gson.fromJson(reader,Metro.class);
         System.out.println(newMetro);
 
+        Line line = new Line();
+        System.out.println(line.getName());
 
     }
 }

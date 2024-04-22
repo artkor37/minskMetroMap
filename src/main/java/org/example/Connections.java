@@ -1,5 +1,6 @@
 package org.example;
 
+import com.google.gson.annotations.SerializedName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,7 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Station {
-   // private String lineName;
+public class Connections {
+    @SerializedName("line")
+    private String line;
     private String name;
 }
