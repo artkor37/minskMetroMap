@@ -15,25 +15,21 @@ import static org.example.UrlParsing.stations1;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        UrlParsing.parsing();
+       // UrlParsing.parsing();
 
-        // Connections connections = new Connections();
-        Station station = new Station();
-        Line line = new Line();
-        Metro metro = new Metro();
-        System.out.println(metro);
+        JsonMetroStruct jsonMetroStruct = new JsonMetroStruct();
+        jsonMetroStruct.add();
+        System.out.println(jsonMetroStruct);
 
 
         Gson gson = new GsonBuilder()
-                .registerTypeAdapter(Station.class, new StationSerializator())
-                .registerTypeAdapter(Line.class, new LineSerializator())
+                //.registerTypeAdapter(Station.class, new StationSerializator())
+               // .registerTypeAdapter(Line.class, new LineSerializator())
                 // .registerTypeAdapter(Line.class,new LineDeserializator())
                 .setPrettyPrinting()
                 .create();
-        String json = gson.toJson(metro);
-        System.out.println(json);
-        //  Metro newMetro = gson.fromJson(json,Metro.class);
-        //System.out.println(newMetro);
-        //JsonFileWriter.toJson(json);
+       String json = gson.toJson(jsonMetroStruct);
+       System.out.println(json);
+       JsonFileWriter.toJson(json);
     }
 }

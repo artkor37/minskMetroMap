@@ -12,11 +12,10 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 public class Line {
-   // @SerializedName("имя")
+    //@SerializedName("имя")
     private String name;
-   //private String color;
-  //private List<Station2> stations;
-  //private List<Station> stations;
+    private String color;
+
 
 
 }

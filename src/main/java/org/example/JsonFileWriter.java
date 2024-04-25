@@ -6,7 +6,7 @@ import java.io.IOException;
 public class JsonFileWriter {
 
     public static void toJson(String json) {
-        try (FileWriter writer = new FileWriter("metroTest.json")) {
+        try (FileWriter writer = new FileWriter("metroTest2.json")) {
             writer.write(json);
             writer.flush();
         } catch (IOException e) {

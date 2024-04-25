@@ -112,7 +112,7 @@ public class UrlParsing {
     public static void addLines(Elements elements) {
 
         System.out.println(elements.text());
-        new Metro().addLine(new Line(elements.text()));
+        new Metro().addLine(new Line(elements.text(),elements.text()));
         //elements.forEach(line -> new Metro().addLine(new Line(line.text())));
         //style:background-color:#1b59dc
         // elements.forEach(line->stat.put(line.text(),stations1));

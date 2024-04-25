@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class Station {
-   // private String lineName;
+    private String lineName;
     private String name;
 }

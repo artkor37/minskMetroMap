@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Connections {
+public class Connection {
     @SerializedName("line")
     private String line;
     private String name;
