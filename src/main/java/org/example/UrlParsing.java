@@ -90,17 +90,17 @@ public class UrlParsing {
            // stations3.add(new Station(line3Name, stationName));
         });*/
 
-        Metro metro = new Metro();
+       // JsonMetroStruct metro = new JsonMetroStruct();
 
-        System.out.println("Kоличество линий: " + metro.getStations());
+       // System.out.println("Kоличество линий: " + metro.getStations());
        /* Metro metro = new Metro();
         for (Line line : metro.getLines()) {
             System.out.println(line.getName());
         }*/
-        System.out.println("Kоличество станций: " + stations1.size() + ": " + stations1);
+       /* System.out.println("Kоличество станций: " + stations1.size() + ": " + stations1);
         for (Station station : stations1) {
             System.out.println(station.getName());
-        }
+        }*/
 
       /*  for (Map.Entry<String, List<Station>> entry : stat.entrySet()) {
             System.out.println(entry.getKey() +" " + entry.getValue());
@@ -111,8 +111,8 @@ public class UrlParsing {
 
     public static void addLines(Elements elements) {
 
-        System.out.println(elements.text());
-        new Metro().addLine(new Line(elements.text(),elements.text()));
+       // System.out.println(elements.text());
+       // new JsonMetroStruct().addLine(new Line(elements.text(),elements.text()));
         //elements.forEach(line -> new Metro().addLine(new Line(line.text())));
         //style:background-color:#1b59dc
         // elements.forEach(line->stat.put(line.text(),stations1));
