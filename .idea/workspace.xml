@@ -4,8 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0b648f-9a22-4589-9497-05499731e5e0" name="Changes" comment="Project was changed">
+    <list default="true" id="8a0b648f-9a22-4589-9497-05499731e5e0" name="Changes" comment="UrlParsing was changed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ColorName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metroTest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metroTest2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minskMetroMap2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/minskMetroMap3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JsonFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JsonFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JsonFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JsonFileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JsonMetroStruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JsonMetroStruct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Line2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UrlParsing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/deserializators/LineDeserializator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/deserializators/LineDeserializator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/deserializators/StationDeserializator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/deserializators/StationDeserializator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/serializators/StationSerializator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/serializators/StationSerializator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -31,30 +51,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.JsonFileReader.executor&quot;: &quot;Run&quot;,
-    &quot;Application.JsonMetroStruct.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UrlParsing.executor&quot;: &quot;Run&quot;,
-    &quot;Application.org.example.JsonMetroStruct.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/git_code_artkor37/HW22&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.JsonFileReader.executor": "Run",
+    "Application.JsonMetroStruct.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Main2.executor": "Run",
+    "Application.Main3.executor": "Run",
+    "Application.UrlParsing.executor": "Run",
+    "Application.org.example.JsonMetroStruct.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/git_code_artkor37/Lessons/Lesson30",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main2">
     <configuration name="JsonMetroStruct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.serializators.JsonMetroStruct" />
       <module name="minskMetroMap" />
@@ -81,8 +101,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main2" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="minskMetroMap" />
       <extension name="coverage">
         <pattern>
@@ -122,10 +142,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.org.example.JsonMetroStruct" />
         <item itemvalue="Application.JsonMetroStruct" />
-        <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Main3" />
       </list>
     </recent_temporary>
@@ -195,7 +215,14 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1714054094036</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="UrlParsing was changed">
+      <option name="closed" value="true" />
+      <created>1714128510774</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1714128510774</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +252,7 @@
     <MESSAGE value="Project was created" />
     <MESSAGE value="Changed" />
     <MESSAGE value="Project was changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project was changed" />
+    <MESSAGE value="UrlParsing was changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="UrlParsing was changed" />
   </component>
 </project>

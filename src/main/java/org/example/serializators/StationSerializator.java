@@ -10,8 +10,8 @@ public class StationSerializator implements JsonSerializer<Station> {
     public JsonElement serialize(Station station, Type type, JsonSerializationContext context) {
         JsonObject stationObject = new JsonObject();
        // stationObject.addProperty("lineName", station.getLineName());
-        stationObject.addProperty("station2", station.getName());
-        return stationObject;
-        // return new JsonPrimitive(station.getName());
+        //stationObject.addProperty("station2", station.getName());
+       // return stationObject;
+        return new JsonPrimitive(station.getName());
     }
 }

@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class Connection {
-    @SerializedName("line")
     private String line;
     private String name;
 }

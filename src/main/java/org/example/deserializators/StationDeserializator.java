@@ -1,14 +1,14 @@
 package org.example.deserializators;
 
 import com.google.gson.*;
-import org.example.Line2;
+import org.example.Line;
 
 import java.lang.reflect.Type;
 
-public class StationDeserializator implements JsonDeserializer<Line2> {
+public class StationDeserializator implements JsonDeserializer<Line> {
     @Override
-    public Line2 deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext context) throws JsonParseException {
-        Line2 station2 = new Line2();
+    public Line deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext context) throws JsonParseException {
+        Line station2 = new Line();
         JsonArray data = jsonElement.getAsJsonArray();
 
 

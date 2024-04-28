@@ -2,8 +2,6 @@ package org.example.deserializators;
 
 import com.google.gson.*;
 import org.example.Line;
-import org.example.Line2;
-
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,10 +15,10 @@ public class LineDeserializator implements JsonDeserializer<Line> {
         line.setName(lineObject.get("name").getAsString());
        // line.setColor(lineObject.get("color").getAsString());
 
-        List<Line2> st = new ArrayList<>();
+        List<Line> st = new ArrayList<>();
         JsonArray stationArray = lineObject.get("stations").getAsJsonArray();
         for (JsonElement jsonCase : stationArray) {
-            st.add(context.deserialize(jsonCase, Line2.class));
+            st.add(context.deserialize(jsonCase, Line.class));
         }
        // line.setStations(st);
         return line;

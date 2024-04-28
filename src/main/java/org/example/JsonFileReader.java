@@ -23,10 +23,10 @@ public class JsonFileReader {
                 .setPrettyPrinting()
                 .create();
 
-        FileReader reader = new FileReader("minskMetroMap3.json");
+        FileReader reader = new FileReader("minskMetroMapExample.json");
        // FileReader rd = new FileReader("metroTest.json");
-        Metro newMetro = gson.fromJson(reader,Metro.class);
-        System.out.println(newMetro);
+        //Metro newMetro = gson.fromJson(reader,Metro.class);
+        //System.out.println(newMetro);
 
         Line line = new Line();
         System.out.println(line.getName());
